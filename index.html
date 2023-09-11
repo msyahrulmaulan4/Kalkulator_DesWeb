@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="result">
+            <div id="history"></div>
+            <div id="output">0</div>
+        </div>
+        <div class="buttons">
+            <button class="clear-button" onclick="clearHistory()">C</button>
+            <button onclick="appendToHistory('7')">7</button>
+            <button onclick="appendToHistory('8')">8</button>
+            <button onclick="appendToHistory('9')">9</button>
+            <button class="operator-button" onclick="appendToHistory('+')">+</button>
+            <button onclick="appendToHistory('4')">4</button>
+            <button onclick="appendToHistory('5')">5</button>
+            <button onclick="appendToHistory('6')">6</button>
+            <button class="operator-button" onclick="appendToHistory('-')">-</button>
+            <button onclick="appendToHistory('1')">1</button>
+            <button onclick="appendToHistory('2')">2</button>
+            <button onclick="appendToHistory('3')">3</button>
+            <button class="operator-button" onclick="appendToHistory('*')">*</button>
+            <button onclick="appendToHistory('0')">0</button>
+            <button onclick="appendToHistory('.')">.</button>
+            <button class="operator-button" onclick="calculateResult()">=</button>
+            <button class="operator-button" onclick="appendToHistory('/')">/</button>
+            <button onclick="deleteLastCharacter()">DEL</button>
+            <button onclick="appendToHistory('(')">(</button>
+            <button onclick="appendToHistory(')')">)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
